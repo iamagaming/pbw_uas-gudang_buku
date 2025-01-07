@@ -1,0 +1,92 @@
+/* Auth Pages Styling */
+.auth-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--dark-color) 0%, #16213e 100%);
+    padding: 50px 0;
+}
+
+.auth-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 450px;
+    margin: 0 auto;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.auth-card h2 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.auth-card .form-label {
+    color: var(--light-color);
+}
+
+.auth-card .form-control {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--light-color);
+}
+
+.auth-card .form-control:focus {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(0, 242, 254, 0.25);
+}
+
+.auth-card .btn-primary {
+    width: 100%;
+    padding: 12px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.auth-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.auth-links a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.auth-links a:hover {
+    color: var(--secondary-color);
+}
+
+/* Form Animation */
+.form-floating > .form-control {
+    height: calc(3.5rem + 2px);
+    line-height: 1.25;
+}
+
+.form-floating > label {
+    padding: 1rem 0.75rem;
+}
+
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label {
+    transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
+}
+
+/* Error Message Styling */
+.alert {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: var(--light-color);
+}
+
+.alert-danger {
+    background: rgba(220, 53, 69, 0.2);
+}
+
+.alert-success {
+    background: rgba(40, 167, 69, 0.2);
+} 
